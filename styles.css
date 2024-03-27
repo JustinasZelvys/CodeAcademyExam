@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sticky-header {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 72px;
+  background: #1c1c1c;
+  opacity: 1;
+  position: relative;
+}
+.header-logo-position {
+  position: absolute;
+  top: 10px;
+  left: 140px;
+}
+.header-logo {
+  width: 120px;
+}
+.header-nav-position {
+  position: absolute;
+  top: 10px;
+  right: 140px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding-bottom: 27px;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+li {
+  margin-left: 25px;
+}
+a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #e27866;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+li a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+li a:hover::after,
+li a:focus::after {
+  transform: scale(1);
+}

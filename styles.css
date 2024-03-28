@@ -64,17 +64,45 @@ li a:focus::after {
   transform: scale(1);
 }
 /*---------------------------------------*/
-#home{
-    background-color: rgba(28, 28, 28, 0.63);
-    background-image: url(./Assets/main-pic.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    background-position: center;
-    height: 850px;
+#home {
+  background-color: rgba(28, 28, 28, 0.63);
+  background-image: url(./Assets/main-pic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  height: 850px;
 }
-#media-bar{
-    width: 100%;
-    background-color: white;
-    height: 120px;
+#media-bar {
+  width: 100%;
+  background-color: white;
+}
+.flex-media {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.media-bar-left {
+  width: 900px;
+  background-color: rgb(248, 210, 159);
+}
+.media-bar-right {
+  width: 100%;
+  display: flex;
+  background-color: antiquewhite;
+}
+
+#transitioning-tabs {
+  background-color: rgba(28, 28, 28, 0.63);
+  background-image: linear-gradient(
+      90deg,
+      rgba(226, 120, 102, 0.42) 0%,
+      rgba(102, 150, 226, 0.42) 100%
+    ),
+    url(./Assets/christoffer-engstrom-503481-unsplash.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: normal;
+  background-position: center;
+  height: 850px;
 }

@@ -340,11 +340,59 @@ input[type="radio"] {
   color: #1c1c1c;
   height: 550px;
 }
+.awesome{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 70px;
+}
+.awesome p{
+  color: #0000008a;
+  font-size: 14px;
+}
+.awesome h1{
+  font-size: 35px;
+}
+.awesome h2{
+  font-size: 20px;
+}
 .line3 {
   height: 0;
   width: 80px;
   border-top: 2px solid #e27866;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+.awesome i{
+  color:#e27866;
+  border: 2px solid #e27866;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.awesome-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.awesome-main-box{
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.awesome-box{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /*---------------------------------------*/
 #pricing {

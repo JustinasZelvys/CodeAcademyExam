@@ -17,7 +17,7 @@ body {
   justify-content: center;
 }
 .width {
-  width: 75%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
 }
@@ -192,7 +192,8 @@ input[type="radio"] {
 .flex-media {
   display: flex;
   align-items: center;
-  width: 75%;
+  width: 70%;
+  max-width: 1700px;
 }
 .media-bar-left {
   width: 900px;
@@ -238,7 +239,9 @@ input[type="radio"] {
 
 .mian-tab-block {
   display: flex;
+  margin-top: 120px;
 }
+
 .side-buttons-css {
   width: 120px;
   height: 120px;
@@ -249,22 +252,119 @@ input[type="radio"] {
   align-items: center;
   margin-bottom: 25px;
 }
+.side-buttons-css:last-child {
+  margin-bottom: 0px;
+}
 .main-info {
-  width: 40%;
   color: white;
   margin-left: 25px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-info-text {
-  width: 500px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .main-info-pic {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 400px;
 }
+
 .main-info-pic img {
   height: 200px;
   width: 200px;
 }
+.main-info-pic img:last-child {
+  height: 200px;
+  width: 400px;
+}
+/*---------------------------------------*/
+#about {
+  background-color: #1c1c1c;
+  height: 620px;
+  color: white;
+}
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.about-logo {
+  width: 400px;
+}
+.about-info {
+  width: 500px;
+}
+.about-info h1{
+  font-size: 30px;
+  width: 350px;
+}
+.line2 {
+  height: 0;
+  width: 150px;
+  border-top: 2px solid #e27866;
+  margin-bottom: 25px;
+}
+.about-info-icon{
+  display: flex;
+}
+.about-info-icon i{
+  background-color: #e27866;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.about-info-icon h6{
+  font-size: 15px;
+  margin: 25px 0 0 20px;
+}
+.about-info-icon p{
+  font-size: 13px;
+  margin: 3px 0 35px 20px;
+}
+/*---------------------------------------*/
+#awesome {
+  color: #1c1c1c;
+  height: 550px;
+}
+.line3 {
+  height: 0;
+  width: 80px;
+  border-top: 2px solid #e27866;
+  margin-bottom: 25px;
+}
+/*---------------------------------------*/
+#pricing {
+  background-color: rgb(107, 148, 224);
+  height: 800px;
+}
 
 /*---------------------------------------*/
+#reviews{
+  height: 550px;
+}
+
+/*---------------------------------------*/
+#contact{
+  height: 600px;
+  background-color: #e27866;
+}
+
+/*---------------------------------------*/
+footer{
+  background-color: #1c1c1c;
+  height: 120px;
+}

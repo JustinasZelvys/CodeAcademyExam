@@ -19,21 +19,23 @@
       <div class="page-mid">
         <div class="width">
           <div class="header-logo-position">
-            <a href="#home"
-              ><img
-                class="header-logo"
-                src="./Assets/logo-normal.png"
-                alt="site-logo"
-            /></a>
+            <a href="#home"><img class="header-logo" src="./Assets/logo-normal.png" alt="site-logo" /></a>
           </div>
           <div class="header-nav-position">
-            <ul class="header-main-nav">
-              <li><a href="#transitioning-tabs">Features</a></li>
+            <ul class="header-main-nav" id="header-main-nav">
+              <li><a href="">Features</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Pricing</a></li>
               <li><a href="">Reviews</a></li>
               <li><a href="">Contact</a></li>
+              <li class="dropdown"><a href=""></a>
+                <ul class="dropdown-content">
+                </ul>
+              </li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleDropdown()">
+              <i class="fa fa-bars"></i>
+            </a>
           </div>
         </div>
       </div>

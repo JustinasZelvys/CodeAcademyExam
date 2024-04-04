@@ -418,6 +418,30 @@ input[type="radio"] {
   font-size: 13px;
   margin: 3px 0 35px 20px;
 }
+@media only screen and (max-width: 900px) {
+  .about-logo{
+    width: 200px;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .about-info{
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-info-icon h6 {
+    text-align: start;
+  }
+  .about-info-icon p {
+    text-align: start;
+  }
+}
 /*---------------------------------------*/
 #awesome {
   color: #1c1c1c;
@@ -560,6 +584,20 @@ input[type="radio"] {
   align-items: center;
   font-size: 14px;
 }
+@media only screen and (max-width: 900px) {
+  #pricing{
+    height: 1750px;
+  }
+  .pricing-box-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing-box{
+    margin-bottom: 15px;
+  }
+}
 /*---------------------------------------*/
 #reviews {
   height: 550px;
@@ -620,6 +658,33 @@ input[type="radio"] {
 .reviews-chat-box p {
   font-size: 14px;
 }
+@media only screen and (max-width: 900px) {
+  #reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+  }
+  .reviews-box-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews h1 {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  .name h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .name p {
+    margin: 0;
+    font-size: 11px;
+  }
+}
 /*---------------------------------------*/
 #contact {
   height: 600px;
@@ -679,4 +744,11 @@ footer {
 }
 .footer-right {
   color: white;
+}
+@media only screen and (max-width: 900px) {
+  .footer-left img {
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 0px;
+  }
 }

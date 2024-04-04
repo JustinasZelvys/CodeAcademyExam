@@ -1,19 +1,16 @@
-window.onload=function(){
+function myFunction() {
+    var dropdown = document.getElementById("myDropdown");
+    dropdown.classList.toggle("show");
+  }
 
-    // burger animation
-    
-    let burger = document.getElementById("burger");
-    let menu = document.querySelector(".header-main-nav");
-    
-    function burgerClick()  {
-        if (burger.classList.contains('active')) {
-            burger.classList.remove('active');
-            menu.classList.remove('translated');
-            }
-            else {
-            burger.classList.add('active');
-            menu.classList.add('translated');
-            }
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
         }
-    burger.addEventListener('click', burgerClick) ;
+      }
     }
+  }

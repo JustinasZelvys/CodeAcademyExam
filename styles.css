@@ -356,6 +356,10 @@ input[type="radio"] {
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
+  cursor: pointer;
+}
+.side-buttons-css:hover {
+  background-color: #c06454;
 }
 .side-buttons-css:last-child {
   margin-bottom: 0px;
